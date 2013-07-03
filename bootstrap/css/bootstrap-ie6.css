@@ -148,7 +148,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
 }
 a {
   color: #0088cc;
@@ -1503,9 +1502,9 @@ legend + .control-group {
 }
 table {
   max-width: 100%;
-  background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
+  background-color: transparent !important;
 }
 .table {
   width: 100%;
@@ -1552,6 +1551,7 @@ table {
 .table-bordered th,
 .table-bordered td {
   border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
 }
 .table-bordered caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
@@ -3367,7 +3367,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs li {
   margin-bottom: -1px;
   *zoom: 1;
-  *background-color: #ffffff;
+  *background-color: transparent;
 }
 .nav-tabs * li {
   zoom: normal;
@@ -3380,8 +3380,6 @@ input[type="submit"].btn.btn-mini {
   *display: inline;
   *zoom: 1;
   *border: 1px solid #fffffe;
-  *background-color: #fffffe;
-  *filter: chroma(color=#fffffe);
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
@@ -4952,4 +4950,21 @@ input[type="submit"].btn.btn-mini {
 }
 .affix {
   position: fixed;
+}
+
+/* RUBEDO */
+.container {
+	margin-left: 250px;
+}
+
+.navbar .container {
+	margin-left: 0;
+}
+
+[id*="list-"].active {
+	background-color: transparent !important; 
+}
+
+label.radio input {
+	float: left;
 }
