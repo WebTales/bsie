@@ -4965,6 +4965,6 @@ input[type="submit"].btn.btn-mini {
 	background-color: transparent !important; 
 }
 
-label.radio input {
+label.radio input, label.checkbox input {
 	float: left;
 }
